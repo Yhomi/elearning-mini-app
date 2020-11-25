@@ -1,10 +1,18 @@
 <?php
 
     class Database{
-        private $dsn = "mysql:host=localhost;dbname=elearning";
-        private $Dbuser = "root";
-        private $Dbpass ="";
-        public $conn;
+        // development
+        // private $dsn = "mysql:host=localhost;dbname=elearning";
+        // private $Dbuser = "root";
+        // private $Dbpass ="";
+        // public $conn;
+
+         // prodcution
+        private $dsn = "mysql:host=us-cdbr-east-02.cleardb.com;dbname=heroku_a09479515d33eae";
+        private $Dbuser = "b2395ab23495eb";
+        private $Dbpass ="39fddf2d";
+         public $conn;
+    
 
         public function __construct(){
             try{
