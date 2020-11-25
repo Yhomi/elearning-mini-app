@@ -31,7 +31,7 @@ $(document).ready(()=>{
             if($('#login-form')[0].checkValidity()){
                 e.preventDefault()
                 $.ajax({
-                        url:'assets/php/Logincontroller.php',
+                        url:'assets/php/LoginController.php',
                         method:'post',
                         data:$('#login-form').serialize() + '&action=login',
                         success:function(res){
